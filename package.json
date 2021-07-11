@@ -1,0 +1,73 @@
+{
+  "name": "hexo-admin",
+  "version": "1.0.0",
+  "description": "A Hexo management tool with UI designed to make it easier for you to compose.",
+  "main": "index.js",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=10.13"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "react-start": "react-scripts start",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "debug-api": "cross-env DEBUG_API=true node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acwars/hexo_admin"
+  },
+  "keywords": [
+    "hexo",
+    "admin"
+  ],
+  "author": "Acwars",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.9.13",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.52",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "fs-extra": "^9.0.0",
+    "hexo": "^4.2.0",
+    "i18next": "^19.4.4",
+    "js-yaml": "^3.13.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "markdown-it": "^10.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.4.0",
+    "react-markdown-editor-lite": "^1.1.2",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4001",
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
